@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is the Average Whole?</title>
+</head>
+<body>
+    <script>
+        function isTheAverageWhole(numbersArray){
+            // loop through Array
+            var addedNumbers = 0;
+            for(var i = 0; i < numbersArray.length; i++){
+                addedNumbers = numbersArray[i] + addedNumbers;
+            }
+            if(addedNumbers % numbersArray.length === 0){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
