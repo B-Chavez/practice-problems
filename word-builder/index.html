@@ -9,10 +9,12 @@
     <script>
         function wordBuilder(wordToSpell){
             var fullWord = '';
+            var myArray = []
             for(var i = 0; i < wordToSpell.length; i++){
                 fullWord += wordToSpell[i];
-                console.log(fullWord)
+                myArray.push(fullWord);
             }
+            return myArray;
         }
     </script>
 </body>
