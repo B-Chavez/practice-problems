@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Santa Coming</title>
+</head>
+<body>
+    <script>
+
+            var dateEl = new Date ();
+            var xmasDate = new Date (2012 ,11, 24)
+
+            function isSantaComing(myDate){
+
+            if(myDate.getMonth === xmasDate.getMonth && myDate.getDate === xmasDate.getDate ){
+                console.log("It's true");
+            } else {
+                console.log("It's false");
+            }
+        }
+    </script>
+</body>
+</html>
