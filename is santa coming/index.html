@@ -8,17 +8,19 @@
 <body>
     <script>
 
-            var dateEl = new Date ();
-            var xmasDate = new Date (2012 ,11, 24)
+        var xmasEve = new Date(2001, 11, 24);
+        var month = xmasEve.getMonth();
+        var date = xmasEve.getDate();
 
-            function isSantaComing(myDate){
+        function isSantaComing(dateObject) {
 
-            if(myDate.getMonth === xmasDate.getMonth && myDate.getDate === xmasDate.getDate ){
-                console.log("It's true");
-            } else {
-                console.log("It's false");
-            }
+
+        if ((dateObject.getMonth() === month) && (dateObject.getDate() === date)) {
+            return true;
+        } else {
+            return false;
         }
+    }
     </script>
 </body>
 </html>
