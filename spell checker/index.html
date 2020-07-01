@@ -9,6 +9,7 @@
     <script>
         var userArray = [];
         var correctArray = [];
+        var returnObject = {};
         function spellChecker(userwords, correctwords){
             for(var i = 0; i < 10; i++){
                 if(userwords[i] !== correctwords[i]){
@@ -17,7 +18,8 @@
                 }
                 
             }
-            return "Correct Words: " + correctArray + " And User Words: " + userArray;
+            var returnObject = {correctWords:correctArray, userWords:userArray}
+            return returnObject;
         }
     </script>
 </body>
