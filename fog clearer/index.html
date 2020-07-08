@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fog Clearer</title>
+</head>
+<body>
+  <script>
+    var myArray = [];
+
+    function fogClearer(stringToClear){
+        for(var i = 0; i < stringToClear.length; i++){
+                  if (stringToClear[i] !== "f" || stringToClear[i] !== "o" || stringToClear[i] !== "g"){
+                    myArray.push(stringToClear[i])
+                    console.log(myArray);
+                  }
+
+        }
+
+    }
+  </script>
+</body>
+</html>
