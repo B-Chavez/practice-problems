@@ -1,20 +1,21 @@
 class Main{
     constructor(){
-        this.book = "";
+        this.title = "";
         this.author = "";
         this.bookshelf = [];
     }
 
     addBook(book,author){
-        this.bookshelf.push({book:book, author:author})
+        this.bookshelf.push({title:book, author:author})
     }
 
-    removeBook(){
+    removeBook(book){
         for(var i = 0; i < this.bookshelf.length; i++){
-
+            if(this.bookshelf[i].title === book){
+                this.bookshelf.splice(i,1);
+            }   
         }
     }
 }
 
-var book1 = new Main()
-var book2 = new Main()
+var mainBook = new Main()
